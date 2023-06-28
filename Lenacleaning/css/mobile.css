@@ -1,0 +1,623 @@
+/* HEADER MOBILE */
+
+@media (max-width: 800px){
+    
+    header{
+        align-items: center;
+    }
+
+    .dropbtn{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        right: 10%;
+    }
+
+    #burguer{
+        transition: all 0.5s;
+    }
+    
+    #x{
+        display: none;
+        transition: all 0.5s; 
+    }
+
+    #burguer:hover, #x:hover{
+        cursor: pointer;
+    }
+
+    @keyframes dropdown {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    
+    menu{
+        display: none;
+    }
+
+    #itens.droplist{
+        display: flex;
+        animation: dropdown 1s;
+    }
+    
+    #itens.droplist ul{
+        flex-direction: column;
+        text-align: left;
+        margin-top: 200px;
+        margin-right: -10px;
+        background-color: #3B3B98;
+    }
+    
+    #itens.droplist ul li{
+        width: 100px;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: 0px;
+    }
+
+    #itens.droplist ul li:hover{
+        background-color: #1e1e6d;
+    }
+
+    #itens.droplist ul li a{
+        padding-top: 10px;
+        padding-bottom: 10px;  
+    }
+
+    #itens.droplist ul li a:hover{
+        border: none;
+        border-radius: none;
+        box-shadow: none;
+    }
+}
+
+/************************** MAIN CONTENT ****************************/
+
+
+/* FORM MOBILE */
+
+@media (max-width: 550px){
+
+    .contact{
+      margin-top: -30px;  
+      font-size: 24px;
+    }
+  
+    form{
+      width: 100%;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    form label{
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+  
+    .label-float{
+      position: relative;
+      padding-top: 5px;
+    }
+    
+    .label-float input{
+      border: 1px solid lightgrey;
+      border-radius: 5px;
+      outline: none;
+      padding: 10px 15px;
+      font-size: 12px;
+      transition: all .1s linear;
+    }
+    
+    .label-float input:focus{
+      border: 2px solid #3951b2;
+    }
+    
+    .label-float input::placeholder{
+      color: transparent;
+    }
+    
+    .label-float label{
+      pointer-events: none;
+      position: absolute;
+      top: 11px;
+      left: 10px;
+      transition: all .1s linear;
+      background-color: #FFF;
+      padding: 0 5px;
+      box-sizing: border-box;
+      font-size: 12px;
+    }
+    
+    .label-float input:focus + label,
+    .label-float input:not(:placeholder-shown) + label{
+      font-size: 13px;
+      top: -9px;
+      color: #3B3B98;
+    }
+    
+    .label-float input:focus:invalid + label{
+      color: red;
+    }
+    
+    .label-float input:focus:required:invalid{
+      border: 2px solid red;
+    }
+  
+    form input{
+      width: 400px;
+      height: 35px;
+      margin-bottom: 10px;
+    }
+  
+    form select{
+        text-align: center;
+        padding: 8px 0;
+        width: 400px;
+    }
+  
+    form button{
+        margin-top: 20px;
+        width: 400px;
+        height: 40px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        background-color: #3B3B98;
+        color: #FFF;
+        transition: all 0.3s;
+    }
+  
+    form button:hover{
+        background-color: #1e1e6d;
+    }
+  
+    .info{
+        width: 400px;
+    }
+  
+    .fname{
+      width: 195px;
+    }
+  
+    .lname{
+      width: 195px;
+    }
+  
+    .email{
+      width: 245px;
+    }
+  
+    .tel{
+        width: 145px;
+    }
+  
+    .add{
+        width: 400px;
+    }
+  
+    .city{
+      width: 245px;
+    }
+  
+    .zip{
+        width: 145px;
+    }
+  
+    .line{
+        display: flex;
+    }
+  
+    .line input:first-child{
+        margin-right: 10px;
+    }
+  
+    .type-service{
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+  
+  /* */
+  
+  @media (max-width: 450px){
+  
+    .contact{
+      margin-top: -30px;  
+      font-size: 24px;
+    }
+  
+    form{
+      width: 100%;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    form label{
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+  
+    .label-float{
+      position: relative;
+      padding-top: 5px;
+    }
+    
+    .label-float input{
+      border: 1px solid lightgrey;
+      border-radius: 5px;
+      outline: none;
+      padding: 10px 15px;
+      font-size: 12px;
+      transition: all .1s linear;
+    }
+    
+    .label-float input:focus{
+      border: 2px solid #3951b2;
+    }
+    
+    .label-float input::placeholder{
+      color: transparent;
+    }
+    
+    .label-float label{
+      pointer-events: none;
+      position: absolute;
+      top: 11px;
+      left: 10px;
+      transition: all .1s linear;
+      background-color: #FFF;
+      padding: 0 5px;
+      box-sizing: border-box;
+    }
+    
+    .label-float input:focus + label,
+    .label-float input:not(:placeholder-shown) + label{
+      font-size: 10px;
+      top: -9px;
+      color: #3B3B98;
+    }
+    
+    .label-float input:focus:invalid + label{
+      color: red;
+    }
+    
+    .label-float input:focus:required:invalid{
+      border: 2px solid red;
+    }
+  
+    form input{
+      width: 350px;
+      height: 35px;
+      margin-bottom: 10px;
+    }
+  
+    form select{
+        text-align: center;
+        padding: 8px 0;
+        width: 350px;
+    }
+  
+    form button{
+        margin-top: 20px;
+        width: 350px;
+        height: 40px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        background-color: #3B3B98;
+        color: #FFF;
+        transition: all 0.3s;
+    }
+  
+    form button:hover{
+        background-color: #1e1e6d;
+    }
+  
+    .info{
+        width: 350px;
+    }
+  
+    .fname{
+      width: 170px;
+    }
+  
+    .lname{
+      width: 170px;
+    }
+  
+    .email{
+      width: 200px;
+    }
+  
+    .tel{
+        width: 140px;
+    }
+  
+    .add{
+        width: 350px;
+    }
+  
+    .city{
+      width: 200px;
+    }
+  
+    .zip{
+        width: 140px;
+    }
+  
+    .line{
+        display: flex;
+    }
+  
+    .line input:first-child{
+        margin-right: 10px;
+    }
+  
+    .type-service{
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+  
+  /* */
+  
+  @media (max-width: 400px){
+  
+    .contact{
+      margin-top: -30px;  
+      font-size: 22px;
+    }
+  
+    form{
+      width: 100%;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    form label{
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+  
+    .label-float{
+      position: relative;
+      padding-top: 5px;
+    }
+    
+    .label-float input{
+      border: 1px solid lightgrey;
+      border-radius: 5px;
+      outline: none;
+      padding: 10px 15px;
+      font-size: 12px;
+      transition: all .1s linear;
+    }
+    
+    .label-float input:focus{
+      border: 2px solid #3951b2;
+    }
+    
+    .label-float input::placeholder{
+      color: transparent;
+    }
+    
+    .label-float label{
+      pointer-events: none;
+      position: absolute;
+      top: 11px;
+      left: 10px;
+      transition: all .1s linear;
+      background-color: #FFF;
+      padding: 0 5px;
+      box-sizing: border-box;
+    }
+    
+    .label-float input:focus + label,
+    .label-float input:not(:placeholder-shown) + label{
+      font-size: 10px;
+      top: -9px;
+      color: #3B3B98;
+    }
+    
+    .label-float input:focus:invalid + label{
+      color: red;
+    }
+    
+    .label-float input:focus:required:invalid{
+      border: 2px solid red;
+    }
+  
+    form input{
+      width: 300px;
+      height: 35px;
+      margin-bottom: 10px;
+    }
+  
+    form select{
+        text-align: center;
+        padding: 8px 0;
+        width: 300px;
+    }
+  
+    form button{
+        margin-top: 20px;
+        width: 300px;
+        height: 40px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        background-color: #3B3B98;
+        color: #FFF;
+        transition: all 0.3s;
+    }
+  
+    form button:hover{
+        background-color: #1e1e6d;
+    }
+  
+    .info{
+        width: 300px;
+    }
+  
+    .fname{
+      width: 145px;
+    }
+  
+    .lname{
+      width: 145px;
+    }
+  
+    .email{
+      width: 170px;
+    }
+  
+    .tel{
+        width: 120px;
+    }
+  
+    .add{
+        width: 300px;
+    }
+  
+    .city{
+      width: 170px;
+    }
+  
+    .zip{
+        width: 120px;
+    }
+  
+    .line{
+        display: flex;
+    }
+  
+    .line input:first-child{
+        margin-right: 10px;
+    }
+  
+    .type-service{
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+
+/* Footer Mobile */
+
+@media (max-width: 550px) {
+    
+  footer{
+    width: 100%;
+    background-color: #1e1e6d;
+    color: #FFF;
+  }
+
+  aside{
+    height: 110px;
+  }
+
+  .footer-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+  }
+
+  .footer-lists{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .aside-logo{
+    margin: 0;
+  }
+
+  .footer-menu img{
+    height: 100px;
+  }
+
+  .footer-menu p{
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .footer-menu ul li{
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .footer-menu ul li:last-child{
+    margin-bottom: 0;
+  }
+
+  .sitemap a:hover{
+    text-decoration: underline;
+  }
+
+  .social-icons{
+    display: flex;
+  }
+
+  .social-icons i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+    margin-right: 5px;
+    background-color: #000;
+  }
+
+  .social-icons i:hover{
+    background-color: #FFF;
+    color: #3B3B98;
+  }
+
+  .final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .final{
+    border-top: 1px solid #ffffff2f;
+    border-top-style: inset;
+  }
+
+}

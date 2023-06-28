@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+
+    <!-- Javascript -->
+    <script src="./js/script.js" defer></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+    <!-- Fontawesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Lena's Cleaning</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container-left">
+            <div class="logo">
+                <a  href="http://127.0.0.1:3000/Lenacleaning/index.html">
+                    <img src="./images/logo_branco_crop.png" alt="Lena's Cleaning">
+                </a>
+            </div>
+        </div>
+
+        <div class="dropbtn">
+            <i id="burguer" class="fa-solid fa-bars" onclick="openMenu()"></i>
+            <i id="x" class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </div>
+
+        <menu id="itens">
+            <ul>
+                <li><a onclick="closeMenu()" href="#home"> Home </a></li>
+                <li><a onclick="closeMenu()" href="#services"> Services </a></li>
+                <li><a onclick="closeMenu()" href="#contact"> Contact  </a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <!-- Main content -->
+    <main id="home">
+        <div class="text">
+            <h2>Hi there,</h2>
+            <p>
+                Looking for professional cleaning services in Washington State?
+            </p>
+            <button><a href="#contact">Click here</a></button>
+        </div>
+        <img src="./images/main-content-img.png" alt="">
+    </main>
+    <!-- END Main content -->
+
+    <!-- Service Slider -->
+    <div id="services" class="services">
+        <h1>Services</h1>
+        <div class="slider-services">
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="slider">
+                    <li class="card">
+                        <div class="img"><img src="./images/house-cleaning-min.jpg" alt="House cleaning" draggable="false"></div>
+                        <div class="description">
+                            <h2> House cleaning </h2>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="./images/movein-cleaning-min.jpg" alt="Move In and Move Out cleaning" draggable="false"></div>
+                        <div class="description">
+                            <h2> Move In | Move Out Cleaning </h2>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="./images/office-cleaning-min.jpg" alt="Office cleaning" draggable="false"></div>
+                        <div class="description">
+                            <h2> Office Cleaning </h2>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="./images/clean-min.jpg" alt="Deep cleaning" draggable="false"></div>
+                        <div class="description">
+                            <h2> Deep Cleaning </h2>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="./images/airbnb-cleaning-min.jpg" alt="Air bnb cleaning" draggable="false"></div>
+                        <div class="description">
+                            <h2> Air Bnb Cleaning </h2>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="./images/post-construction-cleaning-min.jpg" alt="Post Construction cleaning" draggable="false"></div>
+                        <div class="description">
+                            <h2> Post Construction Cleaning </h2>
+                        </div>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+    </div>
+    <!-- END Slider -->
+
+    <!-- Contact -->
+    <div id="contact">
+        <form action="https://formsubmit.co/7rcreative@gmail.com" method="POST">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_next" value="https://lenascleaning.netlify.app/success">
+            <h2 class="contact">Contact</h2>
+
+            <div class="info">
+                <div class="line">
+                    <div class="label-float">
+                        <input id="First_Name" class="fname" type="text" name="First_Name" placeholder=" " required>
+                        <label for="First_Name">First name</label>
+                    </div>
+                    <div class="label-float">
+                        <input id="Last_Name" class="lname" type="text" name="Last_Name"placeholder=" " required>
+                        <label for="Last_Name">Last name</label>
+                    </div>
+                </div>
+
+                <div class="line">
+                    <div class="label-float">
+                        <input id="Email" type="email" class="email" name="Email" placeholder=" " autocomplete="off" required>
+                        <label for="Email" >Email</label>
+                    </div>
+                    <div class="label-float">
+                        <input id="tel" type="tel" class="tel" name="tel" placeholder=" " maxlength="14" pattern="\(\d{3}\)\s*\d{3}-\d{4}" required>
+                        <label for="tel">Phone</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="add">
+                <div class="label-float">
+                    <input id="address" type="text" placeholder=" " required>
+                    <label for="address">Street address</label>
+                </div>
+                
+                <div class="line">
+                    <div class="label-float">
+                        <input id="City" type="text" class="city" name="City" placeholder=" " required>
+                        <label for="City">City</label>
+                    </div>
+                    <div class="label-float">
+                        <input id="ZIP" type="text" class="zip" name="ZIP" placeholder=" " maxlength="5" required>
+                        <label for="ZIP">ZIP code</label>
+                    </div>
+                </div>
+            </div> 
+
+            <select class="type-service" name="Service_Option" id="" required>
+                <option value="">Please, choose an option</option>
+                <option value="House cleaning">House cleaning</option>
+                <option value="Move in Cleaning">Move in Cleaning</option>
+                <option value="Move out Cleaning">Move out Cleaning</option>
+                <option value="Office Cleaning">Office Cleaning</option>
+                <option value="Deep Cleaning">Deep Cleaning</option>
+                <option value="Air Bnb Cleaning">Air Bnb Cleaning</option>
+                <option value="Pos Construction Cleaning">Pos Construction Cleaning</option>
+            </select>
+               
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- END Contact -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-menu">
+            <aside class="aside-logo">
+                <img src="./images/logo_branco_crop.png">
+            </aside>
+            <div class="footer-lists">
+                <aside class="sitemap">
+                    <p>Sitemap</p>
+                    <ul>
+                        <li> <a href="#home"> Home </a> </li>
+                        <li> <a href="#services"> Services </a> </li>
+                        <li> <a href="#contact"> Contact </a> </li>
+                    </ul>
+                </aside>
+                <aside class="social">
+                    <p>Follow Us</p>
+                    <ul class="social-icons">
+                        <li> <a href="https://www.instagram.com/lenacleaning/"><i class="fa-brands fa-instagram"></i></a> </li>
+                        <!-- li> <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a> </li-->
+                    </ul>
+                </aside>
+                <aside>
+                    <p>Legal</p>
+                    <ul class="legal">
+                        <a class="privacy" href="http://127.0.0.1:3000/Lenacleaning/privacypolity.html">Privacy Policy</a>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+
+        <div class="final">
+            <div class="copy"><span>&copy; 2023 Lena's Cleaning. All Rights Reserved.</span></div>
+        </div>
+    </footer>
+    <!-- END Footer -->
+
+</body>
+
+</html>
