@@ -1,5 +1,5 @@
-#remove netlify folder
-.netlify
+# remove netlify from github
+netlify
 
-#remove test folder
+# remove folder ignore from github
 ignore
